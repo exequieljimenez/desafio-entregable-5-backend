@@ -1,6 +1,25 @@
 html
     head
+        link(rel="stylesheet", href="styles.css")
         title='Lista de albumes'
     body 
         h1 Lista de productos
-        li=productos[0].titulo
+            table
+                tr
+                    td id
+                    td titulo 
+                    td banda 
+                    td anio
+                    td tapa
+                each val in productos
+                    tr 
+                    
+                        td=val.id
+                        td=val.titulo
+                        td=val.banda
+                        td=val.anio
+                        td
+                            img(src=val.tapa)
+        button 
+            a(href="http://localhost:3000/") ir al inicio
+            
