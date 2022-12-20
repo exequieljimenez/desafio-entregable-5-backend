@@ -1,0 +1,1 @@
+De los tres motores de plantilla el que me resultó más intuitivo (o quizás sea simplemente que es el que más se vio en clase y en el after) es EJS. Si bien es tiene una sintaxis un poco aparatosa, su lógica resulta un poco más familiar.
