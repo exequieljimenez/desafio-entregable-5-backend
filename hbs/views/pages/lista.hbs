@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>Lista de productos</h1>
+{{#if productos}}
+<div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>titulo</th>
+            <th>banda</th>
+            <th>anio</th>
+            <th>tapa</th>
+        </tr>
+        {{#each productos}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.titulo}}</td>
+            <td>{{this.banda}}</td>
+            <td>{{this.anio}}</td>
+            <td><img src="{{this.tapa}}" alt=""></td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+{{else}}
+        <p>No hay productos</p>
+{{/if}}
+
+<button><a href="http://localhost:3000/">Ir a inicio</a></button>
+</body>
